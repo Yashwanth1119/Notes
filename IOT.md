@@ -12,3 +12,25 @@ usually contains statements that set the pin modes on the arduino to output and 
 
 #### Experiment:-
 1. Giving instructions to the LED to turn on for every two seconds after one second.
+
+```
+// c++ code
+// 
+void setup()
+{
+    pinMode(2,INPUT);
+    pinMode(13,OUTPUT);
+}
+
+void loop()
+{
+    if(digitalRead(2)==1)
+    {
+    digitalWrite(13,HIGH);
+    }
+    else
+    {
+    digitalWrite(13,LOW);
+    }
+}
+```
